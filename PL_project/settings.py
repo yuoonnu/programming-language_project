@@ -25,7 +25,7 @@ INTRO_BG = (255, 250, 240)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ASSETS_DIR = os.path.join(BASE_DIR, 'assets')
 
-# --- [핵심 수정] 폰트 설정 ---
+# --- 폰트 설정 ---
 # 1순위: assets 폴더에 'Jua.ttf'가 있으면 사용
 # 2순위: 없으면 윈도우 '맑은 고딕' 사용 (한글 깨짐 방지)
 # 3순위: 맥(Mac)이면 'AppleGothic' 사용
@@ -59,4 +59,5 @@ huge_font = get_font(45)
 MAX_DAYS = 14
 TIME_LIMIT = 5.0      
 MAX_EAT_COUNT = 5
+
 START_MONEY = 100000

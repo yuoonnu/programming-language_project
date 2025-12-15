@@ -33,16 +33,15 @@
 
 1. 이 페이지 오른쪽 위의 초록색 <> Code 버튼을 누릅니다.  
 2. **Download ZIP**을 클릭하여 압축을 풉니다.  
-3. VS코드에서 압축 푼 폴더를 열고(Ctrl+Shift+E->폴더열기), 터미널(CMD)을 엽니다(Ctrl+`).  
-4. 아래 명령어를 입력하여 게임을 실행합니다.
+3. VS코드에서 압축 푼 폴더를 열고(Ctrl+Shift+E -> 폴더열기), 터미널(CMD)을 엽니다(Ctrl+`).  
+4. 필수 라이브러리를 설치합니다.  
 ```bash
 
-# 필수 라이브러리 설치
+# 터미널에 입력
 pip install pygame
 
-# 게임 실행
-python main.py
 ```
+5. main.py 파일에 들어가 실행버튼을 누릅니다.
 
 ## 📂 폴더 구조
 ```📦 JongGang-Survival

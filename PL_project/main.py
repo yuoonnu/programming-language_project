@@ -177,13 +177,21 @@ def main():
                             warning_msg = ""
                             tray = []
                             day += 1
-                            
-                            # --- [수정됨] Day 8 용돈 이벤트 (2만원) ---
+
+                            # --- Day 8 랜덤 용돈 (1,000원 ~ 20,000원) ---
                             if day == 8: 
-                                if random.random() < 0.4: # 40% 확률
-                                    bonus = 20000 # [수정] 50,000 -> 20,000
+                                if random.random() < 0.4: # 40% 확률 당첨
+                                    # 1 ~ 20 사이의 숫자를 뽑아서 1000을 곱함 (즉, 1000원 ~ 20000원)
+                                    bonus = random.randint(1, 20) * 1000 
+                                    
                                     player.money += bonus
-                                    log_messages.append(f"★ 2주차 격려금! (+{bonus}원)")
+                                    log_messages.append(f"★ 용돈 도착! (+{bonus}원)")
+                                    
+                                    # 금액에 따른 리액션 메시지 추가 (깨알 재미)
+                                    if bonus <= 3000:
+                                        log_messages.append("(......이게 끝이야?)")
+                                    elif bonus >= 15000:
+                                        log_messages.append("(부모님 사랑합니다!!)")
                                 else:
                                     log_messages.append("...부모님의 연락이 없다.")
 
@@ -268,4 +276,5 @@ def main():
         clock.tick(FPS)
 
 if __name__ == "__main__":
+
     main()

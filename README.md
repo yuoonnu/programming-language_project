@@ -48,3 +48,5 @@ pip install pygame
  ┣ 📜 settings.py     # 게임 상수 및 설정 관리
  ┗ 📜 main.py         # 메인 게임 루프 및 UI 실행
 ```
+
+**Blog**: [밈뮴 블로그 링크](https://blog.naver.com/minng705/224123212415)
